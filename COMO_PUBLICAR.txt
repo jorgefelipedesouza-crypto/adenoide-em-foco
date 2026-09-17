@@ -1,0 +1,16 @@
+COMO PUBLICAR GRATUITAMENTE NO GITHUB PAGES
+===============================================
+
+1. Entre em https://github.com e crie/login na sua conta.
+2. Crie um novo repositório chamado: adenoide-em-foco
+3. Envie o arquivo index.html para esse repositório.
+4. No GitHub, abra Settings > Pages.
+5. Em Source, escolha Deploy from a branch.
+6. Escolha a branch main e a pasta /root.
+7. Salve.
+8. O endereço ficará semelhante a:
+   https://SEU-USUARIO.github.io/adenoide-em-foco/
+
+9. Depois, substitua o QR provisório pelo QR que aponta para esse endereço.
+
+O projeto não precisa de banco de dados, login ou servidor. É uma página estática e funciona muito bem no celular.

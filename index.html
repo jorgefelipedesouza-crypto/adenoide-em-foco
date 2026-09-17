@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Adenoide em Foco</title>
+<style>
+:root{--bg:#07111f;--card:#0e1d31;--card2:#13263f;--txt:#eef6ff;--muted:#a9bdd3;--accent:#54d6c7;--accent2:#8ab4ff;--warn:#ffd166;--line:#28415e}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 20% 0%,#17385a 0,#07111f 40%,#050b14 100%);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.55}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.container{width:min(1080px,92%);margin:auto}.hero{min-height:100vh;display:grid;place-items:center;padding:34px 0;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:460px;height:460px;border:1px solid #31506e;border-radius:50%;right:-180px;top:80px;box-shadow:0 0 0 45px #0a192a,0 0 0 46px #31506e}
+.hero-content{position:relative;z-index:1;max-width:850px}.tag{display:inline-block;border:1px solid #39617f;border-radius:999px;padding:7px 12px;color:var(--accent);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(3rem,9vw,7rem);line-height:.9;margin:22px 0 18px;letter-spacing:-.06em}h1 span{color:var(--accent)}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.05;margin-top:0}h3{margin-bottom:7px}.lead{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--muted);max-width:760px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 17px;border-radius:12px;background:var(--accent);color:#031014;font-weight:800;margin:8px 6px 0 0}.btn.alt{background:transparent;color:var(--txt);border:1px solid #42627f}
+section{padding:78px 0;border-top:1px solid rgba(255,255,255,.06)}.eyebrow{color:var(--accent);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:linear-gradient(160deg,rgba(19,38,63,.95),rgba(9,23,39,.95));border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 14px 40px rgba(0,0,0,.18)}
+.kicker{font-size:2rem}.muted{color:var(--muted)}.small{font-size:.9rem;color:var(--muted)}
+.path{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.node{padding:11px 14px;border:1px solid #35526e;border-radius:13px;background:#0b1929}.arrow{display:grid;place-items:center;color:var(--accent)}
+.toggle{display:flex;gap:8px;margin:15px 0}.toggle button{flex:1;padding:11px;border:1px solid #3c5873;background:#0a1727;color:var(--txt);border-radius:12px;cursor:pointer;font-weight:700}.toggle button.active{background:var(--accent);color:#031014}
+.state{padding:18px;border-radius:15px;background:#091624;border:1px solid #28415e;min-height:140px}
+details{border-top:1px solid var(--line);padding:15px 0}summary{cursor:pointer;font-weight:800}
+.quiz button{display:block;width:100%;text-align:left;margin:9px 0;padding:13px;border-radius:12px;border:1px solid #35526e;background:#0b1929;color:var(--txt);cursor:pointer}.quiz button:hover{border-color:var(--accent)}#quizResult{margin-top:14px;font-weight:800}
+.video{display:flex;justify-content:space-between;gap:16px;align-items:center}.video+.video{margin-top:12px}
+footer{padding:50px 0 70px;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+.ref{font-size:.93rem;margin:12px 0}.ref strong{color:var(--txt)}
+.disclaimer{border-left:4px solid var(--warn);padding:15px 17px;background:#1a1820;border-radius:8px;color:#e9e3d4}
+@media(max-width:720px){.grid,.grid3{grid-template-columns:1fr}.hero{min-height:92vh}.hero:before{opacity:.35}.video{align-items:flex-start;flex-direction:column}.btn{width:100%;justify-content:center}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="container hero-content">
+<span class="tag">Fonoaudiologia • experiência interativa</span>
+<h1>ADENOIDE<br><span>EM FOCO</span></h1>
+<p class="lead">Quando uma pequena estrutura pode interferir na respiração, no sono, na audição e na comunicação.</p>
+<p class="muted">Explore o caso, entenda a anatomia, descubra a relação com o ouvido médio e veja onde a Fonoaudiologia entra nessa história.</p>
+<a class="btn" href="#experiencia">Começar a experiência ↓</a>
+<a class="btn alt" href="#fontes">Ver fontes e bibliografia</a>
+</div>
+</header>
+
+<main>
+<section id="experiencia"><div class="container">
+<div class="eyebrow">01 • Comece pelo caso</div><h2>Você consegue descobrir o que está acontecendo?</h2>
+<div class="card">
+<p><strong>Caso fictício:</strong> uma criança ronca, dorme de boca aberta, parece respirar mal pelo nariz, pede para repetir o que foi dito e aumenta o volume da televisão. Na escola, parece desatenta.</p>
+<p>Esses sinais não fecham diagnóstico. Eles são pistas para investigar.</p>
+<div class="path"><div class="node">Hipertrofia de adenoide</div><div class="arrow">→</div><div class="node">Obstrução nasofaríngea</div><div class="arrow">→</div><div class="node">Possível alteração da ventilação da orelha média</div><div class="arrow">→</div><div class="node">Efusão na orelha média</div><div class="arrow">→</div><div class="node">Possível perda auditiva condutiva</div></div>
+<p class="small">A cadeia acima é uma representação didática: a presença de hipertrofia de adenoide não significa que todas essas consequências ocorrerão.</p>
+</div></div></section>
+
+<section><div class="container">
+<div class="eyebrow">02 • Anatomia</div><h2>Onde fica a adenoide?</h2>
+<div class="grid">
+<div class="card"><div class="kicker">👃</div><h3>Nasofaringe</h3><p>A adenoide, também chamada tonsila faríngea, é tecido linfoide localizado na região posterior da nasofaringe. Essa região também contém as aberturas das tubas auditivas.</p></div>
+<div class="card"><div class="kicker">🧬</div><h3>Uma estrutura normal</h3><p>A adenoide faz parte do tecido linfoide da região e é particularmente relevante durante a infância. O problema não é simplesmente “ter adenoide”, mas quando o aumento de volume está associado a sintomas ou complicações.</p></div>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="eyebrow">03 • Veja a diferença</div><h2>Normal × hipertrofia</h2>
+<div class="toggle"><button class="active" onclick="showState('normal',this)">Sem obstrução significativa</button><button onclick="showState('hipertrofia',this)">Hipertrofia</button></div>
+<div id="state" class="state"><h3>Espaço nasofaríngeo preservado</h3><p>Quando não há obstrução significativa, o fluxo nasal e a comunicação funcional com as estruturas próximas podem ocorrer sem a barreira causada por tecido aumentado.</p></div>
+</div></section>
+
+<section><div class="container">
+<div class="eyebrow">04 • Respiração e sono</div><h2>O que pode aparecer no dia a dia?</h2>
+<div class="grid grid3">
+<div class="card"><h3>Respiração</h3><p>Obstrução nasal e respiração oral podem ocorrer quando o tecido aumentado interfere no espaço da nasofaringe.</p></div>
+<div class="card"><h3>Sono</h3><p>Ronco e distúrbios respiratórios do sono podem estar associados à obstrução significativa.</p></div>
+<div class="card"><h3>Ressonância</h3><p>A obstrução nasofaríngea pode contribuir para uma fala com hiponasalidade, dependendo do quadro.</p></div>
+</div></div></section>
+
+<section><div class="container">
+<div class="eyebrow">05 • O ouvido entra na história</div><h2>A conexão com a audição</h2>
+<div class="card">
+<p>A região da adenoide fica próxima às aberturas das tubas auditivas. Em alguns casos, o aumento do tecido pode contribuir para alterações na ventilação da orelha média. Isso pode favorecer a presença de líquido — chamada <strong>otite média com efusão</strong> — e essa condição pode produzir perda auditiva condutiva enquanto a efusão estiver presente.</p>
+<div class="path"><div class="node">Adenoide aumentada</div><div class="arrow">→</div><div class="node">Alteração da ventilação</div><div class="arrow">→</div><div class="node">Líquido na orelha média</div><div class="arrow">→</div><div class="node">Audição pode diminuir</div></div>
+<div class="disclaimer"><strong>Importante:</strong> os materiais de redes sociais usados no projeto são recursos educativos. “Perda auditiva na orelha interna” não é o termo adequado para explicar esse mecanismo: quando a efusão da orelha média causa perda auditiva, trata-se tipicamente de uma alteração <strong>condutiva</strong>, e não de uma perda neurossensorial da orelha interna.</div>
+</div></div></section>
+
+<section><div class="container">
+<div class="eyebrow">06 • Escute com atenção</div><h2>Por que a criança pode parecer “desatenta”?</h2>
+<div class="card">
+<p>Uma criança com dificuldade auditiva pode pedir repetições, ter dificuldade para entender fala em ambientes ruidosos ou parecer não responder quando não está olhando para quem fala. Esses sinais não são exclusivos de otite com efusão e não devem ser usados isoladamente para diagnóstico.</p>
+<p><strong>Na prática:</strong> suspeita de alteração auditiva merece avaliação adequada, com investigação otológica e audiológica conforme indicação profissional.</p>
+<a class="btn alt" href="#fontes">Conferir a diretriz sobre OME →</a>
+</div></div></section>
+
+<section><div class="container">
+<div class="eyebrow">07 • Onde entra a Fonoaudiologia?</div><h2>Respirar, ouvir e comunicar estão conectados.</h2>
+<div class="grid">
+<div class="card"><h3>Ressonância e fala</h3><p>A Fonoaudiologia pode avaliar aspectos de ressonância, fala, linguagem e comunicação quando há sinais compatíveis. Obstruções nasofaríngeas, como adenoides aumentadas, podem estar relacionadas à hiponasalidade.</p></div>
+<div class="card"><h3>Audição e desenvolvimento</h3><p>Quando há suspeita de alteração auditiva, o acompanhamento deve considerar avaliação da audição e possíveis impactos funcionais na comunicação e no contexto escolar.</p></div>
+<div class="card"><h3>Atuação em equipe</h3><p>O cuidado pode envolver Fonoaudiologia, Otorrinolaringologia, Audiologia e família/escola. Cada profissional atua dentro de sua área e a conduta depende da avaliação individual.</p></div>
+<div class="card"><h3>Não é “tratar a adenoide”</h3><p>Quando existe uma obstrução estrutural, a terapia fonoaudiológica não substitui a avaliação médica. A intervenção é definida conforme a causa e os achados clínicos.</p></div>
+</div></div></section>
+
+<section><div class="container">
+<div class="eyebrow">08 • Mitos e fatos</div><h2>Nem tudo que aparece na internet é verdade.</h2>
+<details><summary>“Toda adenoide aumentada precisa de cirurgia.”</summary><p>Não. A conduta depende de sintomas, gravidade, complicações, idade e avaliação profissional.</p></details>
+<details><summary>“Otite média com efusão sempre dói.”</summary><p>Não necessariamente. A presença de líquido na orelha média pode ocorrer sem sinais de infecção aguda e pode ser pouco sintomática.</p></details>
+<details><summary>“Se a criança parece desatenta, é problema de comportamento.”</summary><p>Não é possível concluir isso apenas pelo comportamento. Dificuldades auditivas são uma das possibilidades que podem ser investigadas.</p></details>
+<details><summary>“Adenoide e ouvido interno são a mesma coisa.”</summary><p>Não. A adenoide está na nasofaringe; a relação mais discutida com efusão ocorre na ventilação da <strong>orelha média</strong>.</p></details>
+</div></section>
+
+<section><div class="container">
+<div class="eyebrow">09 • Quiz</div><h2>Agora é sua vez.</h2>
+<div class="card quiz">
+<p><strong>1.</strong> A adenoide está localizada principalmente em qual região?</p>
+<button onclick="answer(this,false)">No ouvido interno</button><button onclick="answer(this,true)">Na nasofaringe</button><button onclick="answer(this,false)">Na laringe</button>
+<p><strong>2.</strong> A perda auditiva associada à efusão da orelha média é tipicamente:</p>
+<button onclick="answer(this,true)">Condutiva</button><button onclick="answer(this,false)">Neurossensorial</button><button onclick="answer(this,false)">Exclusivamente central</button>
+<p><strong>3.</strong> Qual profissional pode avaliar aspectos de ressonância e comunicação?</p>
+<button onclick="answer(this,false)">Somente o dentista</button><button onclick="answer(this,true)">Fonoaudiólogo, dentro de sua área de atuação</button><button onclick="answer(this,false)">Ninguém: não há avaliação</button>
+<div id="quizResult"></div>
+</div></div></section>
+
+<section><div class="container">
+<div class="eyebrow">10 • Materiais audiovisuais</div><h2>Vídeos enviados para o projeto</h2>
+<div class="card">
+<div class="video"><div><strong>Vídeo 1 — Ouvido, efusão e adenoide</strong><div class="small">Material do Instagram indicado para a apresentação.</div></div><a class="btn" target="_blank" href="https://www.instagram.com/reel/DcT0qk0Iz-z/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==">Abrir</a></div>
+<div class="video"><div><strong>Vídeo 2 — Adenoide e audição</strong><div class="small">Material do Instagram indicado para a apresentação.</div></div><a class="btn" target="_blank" href="https://www.instagram.com/reel/DbF3e5rxqCg/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==">Abrir</a></div>
+<div class="video"><div><strong>Vídeo 3 — Desmistificando o básico</strong><div class="small">Material indicado pelo grupo.</div></div><a class="btn" target="_blank" href="https://www.instagram.com/reel/DY5jbibo7fq/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==">Abrir</a></div>
+<div class="video"><div><strong>Vídeo 4 — Relação entre adenoide e ouvido</strong><div class="small">Material indicado pelo grupo; o título original menciona “orelha interna”, mas o projeto corrige a explicação anatômica para o mecanismo da orelha média.</div></div><a class="btn" target="_blank" href="https://www.instagram.com/reel/DbMXwaLB5He/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==">Abrir</a></div>
+<div class="video"><div><strong>Vídeo 5 — Funcionamento da adenoide</strong><div class="small">Material indicado pelo grupo.</div></div><a class="btn" target="_blank" href="https://www.instagram.com/reel/DZrzJo-uMa4/?utm_source=ig_web_copy_link&stkn=NTc4MTIwNjQ2YQ==">Abrir</a></div>
+</div></div></section>
+
+<section id="fontes"><div class="container">
+<div class="eyebrow">11 • Fontes utilizadas</div><h2>Fontes e bibliografia</h2>
+<div class="card">
+<div class="ref"><strong>MSD MANUAL — Distúrbios da adenoide.</strong> Revisão profissional, atualização 2024. Base para localização, sintomas, diagnóstico e tratamento da hipertrofia adenoideana. <a target="_blank" href="https://www.msdmanuals.com/pt/profissional/dist%C3%BArbios-do-ouvido-nariz-e-garganta/dist%C3%BArbios-orais-e-far%C3%ADngeos/dist%C3%BArbios-da-adenoide">Acessar fonte</a></div>
+<div class="ref"><strong>MSD MANUAL — Adenoid Hypertrophy.</strong> Revisão profissional, atualização 2026. Base para sinais, relação com obstrução e efusão da orelha média. <a target="_blank" href="https://www.msdmanuals.com/professional/ear-nose-and-throat-disorders/oral-and-pharyngeal-disorders/adenoid-hypertrophy">Acessar fonte</a></div>
+<div class="ref"><strong>NICE. Otitis media with effusion in under 12s (NG233).</strong> 2023. Base para reconhecimento, avaliação auditiva, acompanhamento e decisões de manejo. <a target="_blank" href="https://www.nice.org.uk/guidance/ng233">Acessar diretriz</a></div>
+<div class="ref"><strong>AAO-HNSF. Updated Clinical Practice Guideline: Otitis Media with Effusion.</strong> 2016. Base para avaliação auditiva, acompanhamento e papel da adenoidectomia em situações específicas. <a target="_blank" href="https://www.entnet.org/resource/aao-hnsf-updated-cpg-ome-press-release-fact-sheet/">Acessar</a></div>
+<div class="ref"><strong>ASHA. Resonance Disorders — Practice Portal.</strong> Base para relação entre obstrução nasofaríngea, adenoides aumentadas e hiponasalidade, além da avaliação fonoaudiológica da ressonância. <a target="_blank" href="https://www.asha.org/practice-portal/clinical-topics/resonance-disorders/">Acessar</a></div>
+<div class="ref"><strong>NCBI Bookshelf. Anatomy, Head and Neck: Adenoids.</strong> Base anatômica para localização da adenoide e proximidade com a abertura da tuba auditiva. <a target="_blank" href="https://www.ncbi.nlm.nih.gov/sites/books/NBK538137/">Acessar</a></div>
+<div class="ref"><strong>NCBI Bookshelf. Anatomy, Head and Neck, Nasopharynx.</strong> Base para anatomia da nasofaringe e relação com as estruturas adjacentes. <a target="_blank" href="https://www.ncbi.nlm.nih.gov/books/NBK557635/">Acessar</a></div>
+<hr style="border-color:#28415e">
+<h3>Materiais audiovisuais fornecidos pelo grupo</h3>
+<p class="small">Cinco vídeos do Instagram foram incorporados como materiais complementares. Eles não foram tratados como fonte científica primária; as afirmações clínicas do projeto foram conferidas e ajustadas com base nas referências técnicas acima.</p>
+<p class="small">Data de acesso às fontes web: 16 set. 2026.</p>
+</div>
+</div></section>
+</main>
+
+<footer><div class="container">
+<strong>ADENOIDE EM FOCO</strong><br>
+Projeto acadêmico — Fonoaudiologia<br><br>
+<span class="small">Conteúdo educativo. Não substitui avaliação ou orientação de profissionais de saúde.</span>
+</div></footer>
+
+<script>
+function showState(mode,btn){
+document.querySelectorAll('.toggle button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+const s=document.getElementById('state');
+if(mode==='normal'){s.innerHTML='<h3>Espaço nasofaríngeo preservado</h3><p>Quando não há obstrução significativa, o fluxo nasal e a comunicação funcional com as estruturas próximas podem ocorrer sem a barreira causada por tecido aumentado.</p>'}
+else{s.innerHTML='<h3>Tecido aumentado</h3><p>Na hipertrofia, o volume da adenoide pode ocupar mais espaço na nasofaringe e, quando a obstrução é relevante, contribuir para respiração oral, ronco, distúrbios do sono e alterações relacionadas à orelha média.</p>'}
+}
+let score=0,answered=0;
+function answer(btn,correct){answered++; if(correct)score++; btn.style.borderColor=correct?'#54d6c7':'#ff7b7b'; document.getElementById('quizResult').textContent=`Você acertou ${score} de ${answered}. Continue explorando!`}
+</script>
+</body></html>
